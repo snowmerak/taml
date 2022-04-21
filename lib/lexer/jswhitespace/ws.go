@@ -1,6 +1,8 @@
 package jswhitespace
 
-import "errors"
+import (
+	"errors"
+)
 
 func Find(data []byte) ([]byte, []byte, []byte, error) {
 	s := -1
@@ -13,7 +15,9 @@ func Find(data []byte) ([]byte, []byte, []byte, error) {
 			e = i + 1
 			continue
 		}
-		break
+		if s != -1 {
+			break
+		}
 	}
 	if s == e {
 		return nil, nil, nil, errors.New("whitespace not found")
