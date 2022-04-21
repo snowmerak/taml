@@ -33,7 +33,7 @@ func FindObject(data []byte) ([]byte, []byte, []byte, error) {
 		}
 		prev, value, _, err := FindValue(data[i:])
 		if err != nil {
-			return nil, nil, nil, err
+			break
 		}
 		e = i + len(prev) + len(value)
 		if e < len(data) && data[e] == ':' {
