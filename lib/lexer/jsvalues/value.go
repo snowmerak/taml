@@ -3,10 +3,10 @@ package jsvalues
 import (
 	"errors"
 
-	"github.com/snowmerak/tson/lexer/jsbool"
-	"github.com/snowmerak/tson/lexer/jsnull"
-	"github.com/snowmerak/tson/lexer/jsnumber"
-	"github.com/snowmerak/tson/lexer/jsstring"
+	"github.com/snowmerak/tson/lib/lexer/jsbool"
+	"github.com/snowmerak/tson/lib/lexer/jsnull"
+	"github.com/snowmerak/tson/lib/lexer/jsnumber"
+	"github.com/snowmerak/tson/lib/lexer/jsstring"
 )
 
 func FindValue(data []byte) ([]byte, []byte, []byte, error) {

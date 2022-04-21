@@ -3,7 +3,7 @@ package jsvalues
 import (
 	"errors"
 
-	"github.com/snowmerak/tson/lexer/jswhitespace"
+	"github.com/snowmerak/tson/lib/lexer/jswhitespace"
 )
 
 func FindObject(data []byte) ([]byte, []byte, []byte, error) {
