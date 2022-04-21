@@ -26,7 +26,7 @@ func MembersOf(t reflect.Type) ([]Member, error) {
 			}
 			members = append(members, Member{
 				Name:      f.Name,
-				Type:      f.Type.Kind().String(),
+				Type:      f.Type.String(),
 				SubMmbers: subMembers,
 			})
 		} else {
