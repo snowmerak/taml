@@ -1,4 +1,4 @@
-package number
+package jsnumber
 
 import "errors"
 

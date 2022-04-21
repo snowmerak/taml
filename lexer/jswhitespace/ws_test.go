@@ -1,4 +1,4 @@
-package ws_test
+package jswhitespace_test
 
 import "testing"
 

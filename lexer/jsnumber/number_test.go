@@ -1,10 +1,10 @@
-package number_test
+package jsnumber_test
 
 import (
 	"bytes"
 	"testing"
 
-	"github.com/snowmerak/tson/lexer/number"
+	number "github.com/snowmerak/tson/lexer/jsnumber"
 )
 
 func TestInteger(t *testing.T) {
