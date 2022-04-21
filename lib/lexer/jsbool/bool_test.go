@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/snowmerak/tson/lexer/jsbool"
+	"github.com/snowmerak/tson/lib/lexer/jsbool"
 )
 
 func TestBool(t *testing.T) {

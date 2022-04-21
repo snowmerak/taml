@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/snowmerak/tson/lexer/jsnull"
+	"github.com/snowmerak/tson/lib/lexer/jsnull"
 )
 
 func TestNull(t *testing.T) {

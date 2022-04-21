@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	number "github.com/snowmerak/tson/lexer/jsnumber"
+	number "github.com/snowmerak/tson/lib/lexer/jsnumber"
 )
 
 func TestInteger(t *testing.T) {
