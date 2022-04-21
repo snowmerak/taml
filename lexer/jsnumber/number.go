@@ -12,6 +12,9 @@ func Find(data []byte) ([]byte, []byte, []byte, error) {
 			break
 		}
 	}
+	if s == -1 {
+		return nil, nil, nil, errors.New("no number found")
+	}
 	for i := e; i < len(data); i++ {
 		if data[i] == '0' || data[i] == '1' || data[i] == '2' || data[i] == '3' || data[i] == '4' || data[i] == '5' || data[i] == '6' || data[i] == '7' || data[i] == '8' || data[i] == '9' {
 			e++
