@@ -3,7 +3,7 @@ package strcase_test
 import (
 	"testing"
 
-	"github.com/snowmerak/taml/strcase"
+	"github.com/snowmerak/tson/strcase"
 )
 
 func TestPascalToSnake(t *testing.T) {
