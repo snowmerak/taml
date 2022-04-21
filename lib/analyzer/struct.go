@@ -32,7 +32,7 @@ func MembersOf(t reflect.Type) ([]Member, error) {
 		} else {
 			members = append(members, Member{
 				Name: f.Name,
-				Type: f.Type.Kind().String(),
+				Type: f.Type.String(),
 			})
 		}
 	}
