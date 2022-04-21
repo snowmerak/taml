@@ -7,7 +7,7 @@ import (
 
 type Member struct {
 	Name      string
-	Type      reflect.Type
+	Type      string
 	SubMmbers []Member
 }
 
@@ -26,13 +26,13 @@ func MembersOf(t reflect.Type) ([]Member, error) {
 			}
 			members = append(members, Member{
 				Name:      f.Name,
-				Type:      f.Type,
+				Type:      f.Type.Kind().String(),
 				SubMmbers: subMembers,
 			})
 		} else {
 			members = append(members, Member{
 				Name: f.Name,
-				Type: f.Type,
+				Type: f.Type.Kind().String(),
 			})
 		}
 	}
