@@ -10,7 +10,7 @@ func Find(data []byte) ([]byte, []byte, []byte, error) {
 			if s == -1 {
 				s = i
 			}
-			e = i
+			e = i + 1
 			continue
 		}
 		break
