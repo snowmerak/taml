@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/snowmerak/tson/lexer/jsstring"
+	"github.com/snowmerak/tson/lib/lexer/jsstring"
 )
 
 func TestStrings(t *testing.T) {
