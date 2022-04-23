@@ -20,9 +20,9 @@ func GoVar2JSON(m analyzer.Member) (string, error) {
 	sb.WriteString("\\\" : \")\n")
 	switch m.Type {
 	case "string":
-		sb.WriteString("sb.WriteString(string(v.")
+		sb.WriteString("sb.WriteString(\"\\\"\"+string(v.")
 		sb.WriteString(m.Name)
-		sb.WriteString("))\n")
+		sb.WriteString("+\"\\\"\"))\n")
 	case "bool":
 		sb.WriteString("sb.WriteString(strconv.FormatBool(v.")
 		sb.WriteString(m.Name)
